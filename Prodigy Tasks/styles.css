@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #7ED56F, #28B485, #7ED56F); /* Initial gradient */
+    background-size: 400% 400%; /* For animation */
+    animation: gradientAnimation 10s ease infinite; /* Animation */
+    margin: 0;
+    padding: 0;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%; /* Initial position */
+    }
+    50% {
+      background-position: 100% 50%; /* Middle position */
+    }
+    100% {
+      background-position: 0% 50%; /* Final position */
+    }
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 1.5s ease;
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    margin-left: 20px;
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  #navbar ul li {
+    float: left;
+  }
+  
+  #navbar ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #navbar ul li a:hover {
+    background-color: #555;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+    border-radius: 10px;
+  }
+  
+  .content {
+    margin-top: 70px; /* Ensure content is below the fixed header */
+    padding: 20px;
+  }
+  

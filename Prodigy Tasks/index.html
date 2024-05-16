@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Include font-awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(45deg, #89ff00, #7ED56F, #28B485, #60a82e, #89ff00);  /* Gradient background */
+      background-size: 400% 400%; /* For animation */
+      animation: gradientAnimation 10s ease infinite; /* Animation */
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%; /* Initial position */
+      }
+      50% {
+        background-position: 100% 50%; /* Middle position */
+      }
+      100% {
+        background-position: 0% 50%; /* Final position */
+      }
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+      z-index: 1000;
+    }
+
+    #navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    #navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    #navbar ul li {
+      margin-right: 20px;
+    }
+
+    #navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    #navbar ul li a:hover {
+      color: #ffffff; /* Yellow color on hover */
+    }
+
+    .content {
+      margin-top: 80px; /* Adjusted to make space for the fixed header */
+      padding: 50px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background-color: #21af26;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      transition: background-color 0.3s ease;
+      border-radius: 30px;
+    }
+
+    .btn:hover {
+      background-color: #fff;
+      color: #4CAF50;
+    }
+
+    /* Text animation */
+    @keyframes slideInFromBottom {
+      0% {
+        transform: translateY(50%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .animated-text {
+      animation: slideInFromBottom 1s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav id="navbar">
+      <div class="logo">GreenDev.</div>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <div class="animated-text">
+      <h1>GreenDev.</h1>
+      <p>We Create Stunning Websites for Your Business</p>
+      <a href="services.html" class="btn">Learn More</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

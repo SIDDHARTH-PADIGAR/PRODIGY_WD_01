@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Include font-awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(45deg, #7ED56F, #28B485, #7ED56F); /* Initial gradient */
+      background-size: 400% 400%; /* For animation */
+      animation: gradientAnimation 10s ease infinite; /* Animation */
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%; /* Initial position */
+      }
+      50% {
+        background-position: 100% 50%; /* Middle position */
+      }
+      100% {
+        background-position: 0% 50%; /* Final position */
+      }
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+      backdrop-filter: blur(10px); /* Blurring effect */
+      color: #fff;
+      padding: 10px 0; /* Adjusted padding */
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    }
+      
+    #navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px; /* Adjusted padding */
+      color: #fff;
+    }
+      
+    .logo {
+      font-size: 1.2rem; /* Adjusted font size */
+      font-weight: bold;
+      margin-left: 10px; /* Adjusted margin */
+    }
+      
+    #navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+      
+    #navbar ul li {
+      margin-right: 15px; /* Adjusted margin */
+    }
+      
+    #navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem; /* Adjusted font size */
+      transition: color 0.3s ease;
+    }
+      
+    #navbar ul li a:hover {
+      color: #ffffff; /* Yellow color on hover */
+    }
+      
+    .active {
+      background-color: #4CAF50;
+    }
+    .content {
+      margin-top: 80px;
+      padding: 20px;
+      text-align: center;
+    }
+    .contact-info {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: left; /* Align text to the left */
+    }
+    .contact-info h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .contact-info p {
+      font-size: 1.1rem;
+      color: #777;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      margin-left: 25px; /* Adjusted left margin for better alignment */
+    }
+    .contact-info .icon {
+      font-size: 1.5rem;
+      color: #4CAF50;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav id="navbar">
+        <div class="logo">GreenDev.</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content contact">
+    <div class="contact-info">
+      <h1>Contact Us</h1>
+      <p>Feel free to get in touch with us to discuss your project or any inquiries you may have. We're here to help!</p>
+      <p><span class="icon"><i class="fas fa-envelope"></i></span>Email: greendev@gmail.com</p>
+      <p><span class="icon"><i class="fas fa-phone"></i></span>Phone: +1 (567) 890-1234</p>
+      <p><span class="icon"><i class="fas fa-map-marker-alt"></i></span>Address:456 Oak Avenue, Springfield, USA</p>
+    </div>
+  </div>
+
+</body>
+</html>

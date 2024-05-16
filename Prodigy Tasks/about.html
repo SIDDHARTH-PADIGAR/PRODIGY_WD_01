@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Include font-awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(45deg, #7ED56F, #28B485, #7ED56F); /* Initial gradient */
+      background-size: 400% 400%; /* For animation */
+      animation: gradientAnimation 10s ease infinite; /* Animation */
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%; /* Initial position */
+      }
+      50% {
+        background-position: 100% 50%; /* Middle position */
+      }
+      100% {
+        background-position: 0% 50%; /* Final position */
+      }
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+        backdrop-filter: blur(10px); /* Blurring effect */
+        color: #fff;
+        padding: 10px 0; /* Adjusted padding */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+      }
+      
+      #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px; /* Adjusted padding */
+        color: #fff;
+      }
+      
+      .logo {
+        font-size: 1.2rem; /* Adjusted font size */
+        font-weight: bold;
+        margin-left: 10px; /* Adjusted margin */
+      }
+      
+      #navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      
+      #navbar ul li {
+        margin-right: 15px; /* Adjusted margin */
+      }
+      
+      #navbar ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem; /* Adjusted font size */
+        transition: color 0.3s ease;
+      }
+      
+      #navbar ul li a:hover {
+        color: #ffffff; /* Yellow color on hover */
+      }
+      
+    .active {
+      background-color: #4CAF50;
+    }
+    .content {
+      margin-top: 80px;
+      padding: 20px;
+      text-align: center;
+    }
+    .about-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .about-container h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .about-container p {
+      font-size: 1.1rem;
+      color: #f9f9f9;
+      line-height: 1.6;
+    }
+    .story {
+      text-align: left;
+      margin-top: 30px;
+    }
+    .story h2 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .story p {
+      font-size: 1.1rem;
+      color: #f2f2f2;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav id="navbar">
+        <div class="logo">GreenDev.</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content about">
+    <div class="about-container">
+      <h1>About Us</h1>
+      <p>Welcome to our company! We are dedicated to providing the best services in the industry. Our team consists of talented professionals who are passionate about what they do.</p>
+      <p>Here's a brief overview of our story:</p>
+      <div class="story">
+        <h2>Our Story</h2>
+        <p>Founded in 2024, our company started with a small team of enthusiasts who shared a common vision: to revolutionize the front-end sector. Over the years, we've grown into a renowned name, serving clients worldwide with our innovative solutions and unwavering commitment to excellence.</p>
+      </div>
+      <div class="story">
+        <h2>Our Values</h2>
+        <p>At Prodigy, we believe in integrity, creativity, and customer satisfaction. These values drive everything we do, from developing cutting-edge technologies to delivering top-notch services.</p>
+      </div>
+      <div class="story">
+        <h2>Our Team</h2>
+        <p>We take pride in our diverse team of experts who bring unique perspectives and skills to the table. With backgrounds in front-end, UI/UX, our team members collaborate seamlessly to tackle challenges and exceed client expectations.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
